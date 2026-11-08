@@ -54,11 +54,11 @@ Aplikasi desktop pencatatan produk toko kelontong berbasis **JavaFX** dan **Mave
 
 ## Screenshot
 
-![Halaman Tambah Produk](screenshotsKelontongApp/formKelontong.png)
+![Halaman Tambah Produk](screeshotsKelontongApp/formKelontong.png)
 
-![Halaman Daftar Produk](screenshotsKelontongApp/daftarProduk.png)
+![Halaman Daftar Produk](screeshotsKelontongApp/daftarProduk.png)
 
-![Halaman Detail Produk](screenshotsKelontongApp/detailProduk.png)
+![Halaman Detail Produk](screeshotsKelontongApp/detailProduk.png)
 
 ## Struktur Proyek
 
