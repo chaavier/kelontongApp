@@ -1,7 +1,7 @@
 
 # KelontongApp
 
-Aplikasi desktop pencatatan produk toko kelontong berbasis **JavaFX** dan **Maven**. Pengguna dapat menambahkan produk (lengkap dengan gambar lampiran), melihatnya dalam tabel, mencari dan memfilter produk, melihat detail, serta menghapusnya. Data disimpan di memori selama aplikasi berjalan (tanpa database).
+Aplikasi desktop pencatatan produk toko kelontong berbasis **JavaFX** dan **Maven**. Pengguna dapat menambahkan produk (lengkap dengan gambar lampiran), melihatnya dalam tabel, mencari dan memfilter produk, melihat detail, serta menghapusnya. Data disimpan di memori selama aplikasi berjalan (tanpa database). Proyek ini dibuat untuk memenuhi tugas mata kuliah Pemrograman Lanjut dengan menerapkan prinsip Object-Oriented Programming (OOP) dan pola arsitektur MVC (Model-View-Controller).
 
 ## Fitur Utama
 
@@ -33,7 +33,7 @@ Aplikasi desktop pencatatan produk toko kelontong berbasis **JavaFX** dan **Mave
 
 1. Clone repository:
    ```
-   git clone https://github.com/USERNAME/KelontongApp.git
+   git clone https://github.com/chaavier/kelontongApp.git
    ```
    (Membutuhkan Git. Alternatifnya, klik tombol **Code > Download ZIP** di halaman repository, lalu ekstrak.)
 
@@ -54,11 +54,11 @@ Aplikasi desktop pencatatan produk toko kelontong berbasis **JavaFX** dan **Mave
 
 ## Screenshot
 
-![Halaman Tambah Produk](screenshots/formKelontong.png)
+![Halaman Tambah Produk](screenshotsKelontongApp/formKelontong.png)
 
-![Halaman Daftar Produk](screenshots/daftarProduk.png)
+![Halaman Daftar Produk](screenshotsKelontongApp/daftarProduk.png)
 
-![Halaman Detail Produk](screenshots/detailProduk.png)
+![Halaman Detail Produk](screenshotsKelontongApp/detailProduk.png)
 
 ## Struktur Proyek
 
@@ -91,4 +91,4 @@ KelontongApp/
 
 ## Pembuat
 
-Nama Kamu (NIM)
+Raissa Javier Aurellia (2503348)
