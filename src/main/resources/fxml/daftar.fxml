@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="612.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelas.controller.DaftarController">
+   <top>
+      <VBox prefWidth="750.0" spacing="13.0" style="-fx-background-color: #c2dc80;" styleClass="header">
+         <children>
+            <Region prefHeight="3.0" prefWidth="701.0" />
+            <Label prefHeight="16.0" prefWidth="242.0" text="Daftar Produk" textFill="#3e2723">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cariField" onAction="#cari" promptText="Cari kode atau nama" />
+            <ComboBox fx:id="filterKategoriBox" />
+            <FlowPane hgap="10" vgap="8">
+               <children>
+                  <Button onAction="#cari" text="Cari" />
+                  <Button onAction="#resetPencarian" text="Reset" />
+                  <Button onAction="#tambah" style="-fx-background-color: #d56989;" styleClass="button-primary" text="Tambah" />
+                  <Button onAction="#detail" text="Lihat Detail" />
+                  <Button onAction="#hapus" text="Hapus" />
+                  <CheckBox fx:id="hargaCheck" onAction="#ubahTampilanHarga" selected="true" text="Harga" />
+               </children>
+            </FlowPane>
+            <Region prefHeight="0.0" prefWidth="710.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="25.0" right="25.0" />
+         </padding>
+      </VBox>
+   </top>
+   <center>
+      <TableView fx:id="tabel" prefHeight="423.0" prefWidth="750.0">
+         <columns>
+            <TableColumn fx:id="kodeCol" prefWidth="128.79998469352722" text="Kode" />
+            <TableColumn fx:id="namaCol" prefWidth="237.59999084472656" text="Produk" />
+            <TableColumn fx:id="kategoriCol" prefWidth="174.39996337890625" text="Kategori" />
+            <TableColumn fx:id="hargaCol" prefWidth="122.39996337890625" text="Harga" />
+         </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <Label fx:id="pesanLabel" styleClass="error" textFill="#660303" wrapText="true" />
+   </bottom>
+</BorderPane>

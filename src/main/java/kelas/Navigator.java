@@ -1,0 +1,68 @@
+
+package kelas;
+
+/**
+ * @author HP
+ */
+import java.io.IOException;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import kelas.controller.*;
+import kelas.data.DataPenambahanProduk;
+import kelas.model.Penambahan;
+
+public class Navigator {
+    
+    private final Stage stage;
+    private final DataPenambahanProduk data;
+    private Scene scene;
+    
+    public Navigator(Stage stage, DataPenambahanProduk data){
+        this.stage = stage;
+        this.data = data;
+    }
+    
+    private FXMLLoader loader (String nama) {
+        return new FXMLLoader (getClass().getResource("/fxml/" + nama + ".fxml"));
+    }
+    
+    private void tampil (Parent root) {
+        if (scene == null) {
+            scene = new Scene (root, 900, 680);
+//            scene.getStylesheets().add(getClass().getResource("/kelas/style/app.css").toExternalForm());
+            stage.setScene(scene);
+            stage.setTitle("KelontongApp - Daftar Produk");
+            stage.setMinWidth(640);
+            stage.setMinHeight(480);
+        } else {
+            scene.setRoot(root);
+        }
+        stage.show();
+    }
+    
+    public void bukaForm() throws IOException {
+        FXMLLoader l = loader("form");
+        Parent root = l.load();
+        FormController c = l.getController();
+        c.setKonteks(this, data);
+        tampil(root);
+    }
+    
+    public void bukaDetail(Penambahan p) throws IOException {
+        FXMLLoader l = loader("detail");
+        Parent root = l.load();
+        DetailController c = l.getController();
+        c.setData(this, p);
+        tampil(root);
+    }
+    
+    public void bukaDaftar() throws IOException {
+        FXMLLoader l = loader("daftar");
+        Parent root = l.load();
+        DaftarController c = l.getController();
+        c.setKonteks(this, data);
+        tampil(root);
+    }
+}

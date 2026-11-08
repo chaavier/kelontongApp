@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="705.0" prefWidth="600.0" style="-fx-background-color: #c2dc80;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelas.controller.DetailController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="600.0" style="-fx-background-color: #c2dc80;">
+         <children>
+            <VBox layoutX="43.0" layoutY="31.0" prefHeight="548.0" prefWidth="514.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="102.0" text="Kode Produk" textFill="#3e2723">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="kodeLabel" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="350.0" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="102.0" text="Nama Produk" textFill="#3e2723">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="namaLabel" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="350.0" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="122.0" text="Kategori Produk" textFill="#3e2723">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="kategoriLabel" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="350.0" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="131.0" text="Harga Produk (Rp)" textFill="#3e2723">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="hargaLabel" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="350.0" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fx:id="gambarView" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="pesanLabel" maxWidth="1.7976931348623157E308" prefHeight="31.0" prefWidth="350.0" textFill="#861200">
+                     <font>
+                        <Font name="Century Gothic Italic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#tambahLagi" prefHeight="31.0" prefWidth="226.0" style="-fx-background-color: #838f58;" text="Tambah Produk Lain" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="95.0" prefWidth="600.0" style="-fx-background-color: #d56989;" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="95.0" prefWidth="30.0" />
+            <Label alignment="CENTER" prefHeight="31.0" prefWidth="197.0" text="Detail Produk" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Label>
+            <Region prefHeight="95.0" prefWidth="30.0" />
+            <Button mnemonicParsing="false" onAction="#bukaDaftar" prefHeight="36.0" prefWidth="90.0" style="-fx-background-color: #838f58;" text="Lihat Daftar" textFill="WHITE">
+               <font>
+                  <Font name="Candara Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
